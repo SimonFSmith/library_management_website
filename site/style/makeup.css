@@ -1,0 +1,104 @@
+/* ÉCRANS MULTIPLES */
+h1 {
+    color: navy;
+}
+
+h2 {
+    color: #05386B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+/* ÉCRAN 1 */
+#screen1 .content button {
+    font-size: 20px;
+    margin: 25px 0px;
+    width: 175px;
+}
+
+#screen1 .content {
+    height: 375px;
+    width: 500px;
+    padding: 20px 0px;
+    margin: 0px auto;
+    border: 1px solid gray; 
+}
+
+/* ÉCRAN 2 */
+#screen2 table {
+    margin: 0 auto;
+}
+
+#screen2 #usager_table tr:hover {
+    background-color: lightgray;
+}
+
+#screen2 th { 
+    padding: 5px 15px;
+}
+
+/* ÉCRAN 3 */
+#screen3 .content {
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+#screen3 table, th, td {
+    border: 1px solid black;
+}
+
+#screen3 table {
+    width: 80%;
+}
+
+#screen3 th, td {
+    padding: 0.5rem;
+}
+
+#employe_table tr:hover {
+    background-color: lightgray;
+}
+
+/* ÉCRAN 4 */
+#screen4 .content {
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+#screen4 table, th, td {
+    border: 1px solid black;
+}
+
+#screen4 table {
+    width: 80%;
+}
+
+#screen4 th, td {
+    padding: 0.5rem;
+}
+
+#livre_table tr:hover {
+    background-color: lightgray;
+}
+
+/* ÉCRAN 5 */
+#screen5 .content {
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+#screen5 table, th, td {
+    border: 1px solid black;
+}
+
+#screen5 table {
+    width: 80%;
+}
+
+#screen5 th, td {
+    padding: 0.5rem;
+}
+
+#pret_table tr:hover {
+    background-color: lightgray;
+}

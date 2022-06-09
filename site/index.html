@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style/layout.css">
+    <link rel="stylesheet" type="text/css" href="./style/makeup.css">
+    <script defer src ="./code/main.js"></script>
+</head>
+<body>
+<div id="main">
+    <!-- Écran #S001: Accueil -->
+    <div id="screen1">
+        <!-- Label Accueil -->
+        <h2></h2>
+        <div class="top-section">
+        </div>
+        <div class="content">
+            <!-- Boutons de sélection des écrans -->
+            <button id="btn-screen2"></button>
+            <button id="btn-screen3"></button>
+            <button id="btn-screen4"></button>
+            <button id="btn-screen5"></button>
+        </div>
+    </div>
+    <!-- Écran #S002: Usagers -->
+    <div id="screen2">
+        <!-- Label Usagers -->
+        <h2></h2>
+        <div class="top-section">
+            <!-- Bouton de retour à l'accueil -->
+            <button class="btn-back-screen1"></button>
+        </div>
+        <br><br>
+        <div class="content">
+             <!-- Conteneur d'ajout -->
+            <div>
+                <!-- Formulaire d'ajout et de modification d'un usager -->
+                <form action="" class="formulaire-usager">
+                    <div>
+                        <input type="text" class="input-usager-id" name="" placeholder="ID" readonly>&nbsp;&nbsp;
+                        <input type="text" class="input-usager-prenom" name="" placeholder="Prénom">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-nom" name="" placeholder="Nom">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-adresse" name="" placeholder="Adresse">&nbsp;&nbsp;
+                    </div>&nbsp;&nbsp;
+                    <div>
+                        <input type="text" class="input-usager-ville" name="" placeholder="Ville">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-province" name="" placeholder="Province">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-code-postal" name="" placeholder="Code postal">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-pays" name="" placeholder="Pays">&nbsp;&nbsp;
+                    </div>&nbsp;&nbsp;
+                    <div>
+                        <input type="text" class="input-usager-telephone-un" name="" placeholder="Téléphone (un)">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-telephone-deux" name="" placeholder="Téléphone (deux)">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-courriel" name="" placeholder="Courriel">&nbsp;&nbsp;
+                        <input type="text" class="input-usager-date-inscription" name="" placeholder="Date d'inscription">&nbsp;&nbsp;
+                    </div>
+                </form>
+            </div>
+            <br><br>
+            <div class="button-group">
+                <!-- Bouton d'ajout d'un usager -->
+                <button class="btn-add-user"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Bouton de modification d'un usager -->
+                <button class="btn-update-user"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Bouton de suppression d'un usager -->
+                <button class="btn-delete-user"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Bouton d'annulation de sélection d'un usager -->
+                <button class="btn-cancel-select-user"></button>
+            </div>
+        </div>
+        <br><br>
+        <!-- Conteneur du tableau -->
+        <div >
+            <!-- Tableau contenant les informations des usagers -->
+            <table id="tableId">
+                <tr>
+                    <th class="usager-id"></th>
+                    <th class="usager-nom"></th>
+                    <th class="usager-prenom"></th>
+                    <th class="usager-adresse"></th>
+                    <th class="usager-ville"></th>
+                    <th class="usager-code-postal"></th>
+                    <th class="usager-province"></th>
+                    <th class="usager-pays"></th>
+                    <th class="usager-telephone-un"></th>
+                    <th class="usager-telephone-deux"></th>
+                    <th class="usager-courriel"></th>
+                    <th class="usager-date-inscription"></th>
+                </tr>
+                <tbody id="usager_table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Écran #S003: Employés -->
+    <div id="screen3">
+        <!-- Label Employés -->
+        <h2></h2>
+        <div class="top-section">
+            <!-- Bouton de retour à l'accueil -->
+            <button class="btn-back-screen1"></button>
+        </div>
+        <br>
+        <div class="content">
+            <!-- Tableau contenant les informations des employés -->
+            <Table>
+                <tr>
+                    <th class="employe-id"></th>
+                    <th class="employe-nom"></th>
+                    <th class="employe-prenom"></th>
+                    <th class="employe-adresse"></th>
+                    <th class="employe-ville"></th>
+                    <th class="employe-code-postal"></th>
+                    <th class="employe-province"></th>
+                    <th class="employe-pays"></th>
+                    <th class="employe-telephone-un"></th>
+                    <th class="employe-telephone-deux"></th>
+                    <th class="employe-courriel"></th>
+                    <th class="employe-date-embauche"></th>
+                </tr>
+                <tbody id="employe_table">
+                </tbody>
+            </Table>
+        </div>
+    </div>
+    <!-- Écran #S004: Livres -->
+    <div id="screen4">
+        <!-- Label Livres -->
+        <h2></h2>
+        <div class="top-section">
+            <!-- Bouton de retour à l'accueil -->
+            <button class="btn-back-screen1"></button>
+        </div>
+        <br>
+        <div class="content">
+            <!-- Tableau contenant les informations des livres -->
+            <Table>
+                <tr>
+                    <th class='livre-id'></th>
+                    <th class='livre-titre'></th>
+                    <th class='livre-auteur'></th>
+                    <th class='livre-editeur'></th>
+                    <th class='livre-pages'></th>
+                    <th class='livre-date-parution'></th>
+                </tr>
+                <tbody id="livre_table">
+                </tbody>
+            </Table>
+        </div>
+    </div>
+    <!-- Écran #S005: Prêts -->
+    <div id="screen5">
+        <!-- Label Prêts -->
+        <h2></h2>
+        <div class="top-section">
+            <!-- Bouton de retour à l'accueil -->
+            <button class="btn-back-screen1"></button>
+        </div>
+        <br>
+        <div class="content">
+            <!-- Tableau contenant les informations des prêts -->
+            <table>
+                <tr>
+                    <th class='pret-id'></th>
+                    <th class='pret-date-pret'></th>
+                    <th class='pret-date-retour'></th>
+                </tr>
+                <tbody id="pret_table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

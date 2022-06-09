@@ -1,0 +1,61 @@
+/* ÉCRANS MULTIPLES */
+h2 {
+    text-align: center;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* ÉCRAN 1 */
+#screen1 .content button {
+    display: block;
+}
+
+#screen1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ÉCRAN 2 */
+#screen2 .content div {
+    display: flex;
+    justify-content: center;
+}
+
+#screen2 table {
+    border-collapse: collapse;
+}
+
+/* ÉCRAN 3 */
+#screen3 .content {
+    display: flex;
+    justify-content: center;
+}
+
+#screen3 table {
+    border-collapse: collapse;
+}
+
+/* ÉCRAN 4 */
+#screen4 .content {
+    display: flex;
+    justify-content: center;
+}
+
+#screen4 table {
+    border-collapse: collapse;
+}
+
+/* ÉCRAN 5 */
+#screen5 .content {
+    display: flex;
+    justify-content: center;
+}
+
+#screen5 table {
+    border-collapse: collapse;
+}
